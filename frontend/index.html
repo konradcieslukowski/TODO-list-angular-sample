@@ -1,1 +1,41 @@
-plik startowy aplikacji
+<!DOCTYPE html>
+<html ng-app="projektApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="controller.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div ng-controller="projektCtrl">
+
+    <ul>
+        <li class="header">
+            <div class="img1"></div><div class="img2"></div>
+        </li>
+        <li ng-repeat="zadanie in zadania">
+            <div class="cell"><input type="checkbox" ng-model="zadanie.done"></div>
+            <div class="cell"><span ng-class="{donecss: zadanie.done}">{{zadanie.name}}</span></div>
+            <div class="trash">
+                <div class="glyphicon glyphicon-trash" ng-click="usunZadanie(zadanie)"></div>
+            </div>
+        </li>
+        <li>
+            <div class="glyphicon glyphicon-plus cell" ng-click="dodajZadanie()"></div>
+            <div class="cell"><input type="text" placeholder="..." ng-model="added"></div>
+        </li>
+    </ul>
+    </span>
+</div>
+
+</body>
