@@ -1,50 +1,59 @@
 ul {
-  width: 360px; }
+  width: 360px;
+}
 
 li {
   background-color: white;
   list-style-type: none;
   color: #2e3641;
   font-family: 'Lato', sans-serif;
-  border-bottom: solid 1px; }
+  border-bottom: solid 1px;
+}
 
 textarea:focus, input:focus {
-  outline: none; }
+  outline: none;
+}
 
 .header {
-  margin-bottom: -5px; }
+  margin-bottom: -5px;
+}
 
 .header .img1 {
   background-image: url("to-do-list1.jpg");
   background-repeat: no-repeat;
   width: 34px;
   height: 36px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .header .img2 {
   background-image: url("to-do-list.jpg");
   background-repeat: no-repeat;
   display: inline-block;
   width: 286px;
-  height: 36px; }
+  height: 36px;
+
+}
 
 .donecss {
   color: #9eb2c0;
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 .cell {
   margin-left: 10px;
   display: inline-block;
-  position: relative; }
+  position: relative;
+}
 
 input[type="text"] {
   width: 222px;
-  border: none; }
+  border: none;
+}
 
 .trash {
   left: 320px;
   position: absolute;
   display: inline-block;
-  cursor: pointer; }
-
-/*# sourceMappingURL=index.css.map */
+  cursor: pointer;
+}
